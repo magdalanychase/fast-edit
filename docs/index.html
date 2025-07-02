@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,48 +8,81 @@
     <link rel="icon" type="image/svg+xml" href="icon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap"
+        rel="stylesheet">
     <style>
-    body {
-        font-family: 'Geist', sans-serif;
-        font-weight: 400;
-        padding: 0.2rem;
-    }
-    h1 {
-        font-size: 28px;
-        margin: 0;
-    }
-    h2 {
-        font-size: 20px;
-    }
-    p {
-        font-size: 18px;
-        margin: 0;
-    }
-    code {
-        font-family: 'Geist Mono', monospace;
-        font-weight: 400;
-        background-color: #f0f0f0;
-        padding: 0.2rem;
-        border-radius: 4px;
-    }
-    header {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        margin-bottom: 1rem;
-    }
+        body {
+            font-family: 'Geist', sans-serif;
+            font-weight: 400;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #F2F0EF;
+            color: #222222;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 0;
+            word-break: break-word;
+        }
+
+        code {
+            font-family: 'Geist Mono', monospace;
+            font-weight: 400;
+            background-color: #e2e2e2;
+            padding: 0.2rem;
+            border-radius: 4px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            background-color: #f0f0f0;
+            border-bottom: 1px solid #ccc;
+            width: 100%;
+        }
+
+        .content {
+            padding: 0.2rem;
+            width: 60rem;
+            margin: 0 20rem;
+            overflow-wrap: break-word;
+            word-break: break-word;
+        }
+
+        .logo {
+            padding: 0.5rem;
+        }
     </style>
 </head>
+
 <body>
     <header>
-        <img src="icon.svg" height="36px">
+        <img src="icon.svg" height="36px" class="logo">
         <h1>quick edit</h1>
     </header>
-    <h1>quick edit</h1>
-    <h2>An AI model made to write code, fast</h2>
-    <p>This model is designed from the ground up to be fast and efficient.</p>
-    <br>
-    <p>Run <code>index.ts</code> to run the model.</p>
+    <div class="content">
+        <h1>quick edit</h1>
+        <h2>An AI model made to write code, fast</h2>
+        <p>This model is designed from the ground up to be fast and efficient.</p>
+        <br>
+        <p>Run <code>index.ts</code> to run the model.</p>
+    </div>
 </body>
+
 </html>
